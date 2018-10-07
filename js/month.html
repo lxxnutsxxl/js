@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS CODE</title>
+</head>
+<body>
+	<script>   
+		function monthDays (month, year) {
+			var date = new Date(year, month, 0);
+		  	return date.getDate();
+		} 
+		var month = [
+					'Январь',
+					'Февраль',
+					'Март',
+					'Апрель',
+					'Май',
+					'Июнь',
+					'Июль',
+					'Август',
+					'Сентябрь',
+					'Октыбрь',
+					'Ноябрь',
+					'Декабрь'
+					];
+
+ 		for (i = 0; i <= 11; i++) { 
+ 			var days = monthDays(i+1, 2018);
+ 			var daysName = month[i];
+
+ 			if (days === 31) {
+ 				console.log(daysName + ': ' + days + 'день');
+ 			}
+ 		}  
+	</script>
+</body>
+</html>
